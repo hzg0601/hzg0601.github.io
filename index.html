@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="zh-cn">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no"
+    />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="format-detection" content="email=no" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="format-detection" content="telephone=no" />
+    <meta name="renderer" content="webkit">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="apple-mobile-web-app-title" content="Amaze UI" />
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+    <meta http-equiv="Pragma" content="no-cache" />
+    <meta http-equiv="Expires" content="0" />
+    <title>[简历]黄志国-博士后研究院/杭州</title>
+    <link rel="shortcut icon" href="assets/images/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/typo.css">
+    <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+    <link rel="stylesheet" href="assets/css/index.css">
+    <script>
+        function loading() {
+            document.getElementsByClassName('avatar')[0].style.display = 'block';
+            document.getElementsByClassName('loading')[0].style.display = 'none';
+        }
+    </script>
+</head>
+
+<body>
+
+    <header class="header"></header>
+
+    <article class="container">
+        <section class="side" id="side">
+
+            <!-- 左栏固定开关，记得及时删除这段代码 Start-->
+            <label class="switch" style="display: none;" onchange="switchFixed()">
+                <script type="text/javaScript">
+                    function switchFixed(){
+                        var value = document.getElementById('side').style.position === 'fixed' ? 'absolute' : 'fixed';
+                        document.getElementById('side').style.position = value;
+                    }
+                </script>
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+            <style>
+                @media (min-width: 	750px){
+                    .switch{position:relative;display:inline-block!important;width:60px;height:34px;}
+                    .switch input{display:none;}
+                    .slider{position:absolute;cursor:pointer;top:0;left:0;right:0;bottom:0;background-color:#ccc;-webkit-transition:.4s;transition:.4s;}
+                    .slider:before{position:absolute;content:"";height:26px;width:26px;left:4px;bottom:4px;background-color:white;-webkit-transition:.4s;transition:.4s;}
+                    input:checked + .slider{background-color:#1abc9c;}
+                    input:focus + .slider{box-shadow:0 0 1px #1abc9c;}
+                    input:checked + .slider:before{-webkit-transform:translateX(26px);-ms-transform:translateX(26px);transform:translateX(26px);}.slider.round{border-radius:34px;}
+                    .slider.round:before{border-radius:50%;}
+                }
+            </style>
+            <!-- 左侧固定开关，记得及时删除这段代码 End-->
+
+            <!-- 个人肖像 -->
+            <section class="me">
+                <section class="portrait">
+                    <div class="loading">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <!-- 头像照片 -->
+                    <img class="avatar" src="assets/images/avatar.jpg" onload="loading()">
+                </section>
+
+                <h1 class="name">黄志国</h1>
+                <h4 class="info-job">博士 / 杭州</h4>
+
+            </section>
+
+            <!-- 基本信息 -->
+            <section class="profile info-unit">
+                <h2>
+                    <i class="fa fa-user" aria-hidden="true"></i>基本信息</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>个人信息</label>
+                        <span>黄志国 / 男 / 1989年6月</span>
+                    </li>
+                    <li>
+                        <label>研究兴趣</label>
+                        <span>图神经网络算法与应用</span>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 联系方式 -->
+            <section class="contact info-unit">
+                <h2>
+                    <i class="fa fa-phone" aria-hidden="true"></i>联系方式</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>手机</label>
+                        <a href="tel:15302180605" target="_blank">151-6828-5219</a>
+                    </li>
+                    <li>
+                        <label>邮箱</label>
+                        <a href="mailto:hzg0601@163.com" target="_blank">ze.zh@hotmail.com</a>
+                    </li>
+
+                    <li>
+                        <label>Github</label>
+                        <a href="https://github.com/hzg0601" target="_blank">github.com/hzg0601</a>
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 技能点 -->
+            <section class="skill info-unit">
+                <h2>
+                    <i class="fa fa-code" aria-hidden="true"></i>技能点</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <label>python</label>
+                        <progress value="90" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>pytorch</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>图神经网络</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>推荐系统</label>
+                        <progress value="85" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>torch-geometric</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                    <li>
+                        <label>NLP</label>
+                        <progress value="70" max="100"></progress>
+                    </li>
+                </ul>
+            </section>
+
+            <section class="qrcode info-unit">
+                <h2><i class="fa fa-qrcode" aria-hidden="true"></i>二维码</h2>
+                <hr/>
+                <img src="https://github.com/if2er/FeZaoDuKe-Collection/blob/master/ifeees.jpg?raw=true" style="width: 100%;" alt="">
+            </section>
+
+            <!-- 技术栈 -->
+            <!-- <div class="stack info-unit">
+                    <h2><i class="fa fa-code" aria-hidden="true"></i>其他</h2>
+                    <hr/>
+                    <ul>
+                        <li>
+                            <label>前端</label>
+                            <span>React、jQuery、微信小程序、Bootstrap、SASS、LESS</span>
+                        </li>
+                        <li>
+                            <label>后端</label>
+                            <span>Node.js、MySQL、MongoDB、WordPress、ThinkPHP</span>
+                        </li>
+                        <li>
+                            <label>其他</label>
+                            <span>Git、SVN、Markdown</span>
+                        </li>
+                    </ul>
+                </div> -->
+        </section>
+
+        <section class="main">
+
+            <!-- 教育经历 -->
+            <section class="edu info-unit">
+                <h2>
+                    <i class="fa fa-graduation-cap" aria-hidden="true"></i>教育经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>南开大学 - 精算学专业（博士）</span>
+                            <time>2016.9-2019.7</time>
+                        </h3>
+                        <p>专业方向
+                            <mark>社会保障与人口结构</mark>，期间发表CSSCI来源期刊4篇，会议论文1篇。</p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>华侨大学 - 统计学专业（硕士）</span>
+                            <time>2013.9-2016.7</time>
+                        </h3>
+                        <p>专业方向
+                            <mark>货币政策与劳动经济学</mark>，期间发表CSSCI来源期刊2篇，研究报告2篇。</p>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>东华理工大学 - 信息与技术科学专业（本科）</span>
+                            <time>2008.9-2012.7</time>
+                        </h3>
+
+                    </li>
+                </ul>
+            </section>
+
+            <!-- 工作经历 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-shopping-bag" aria-hidden="true"></i>工作经历</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[经历1]恒生电子股份公司/浙江大学科学技术研究院－技术专家/博士后研究员</span>
+                            <time>2019.7 至今</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>2019.07-2020.03部门为恒生研究院专家工作室,
+                                负责机器学习在金融工程中的应用与开发,金融工程主要研究方向为alpha模型,风险模型,大类资产配置,
+                                机器学习算法主要方向为 automl,强化学习。</li>
+                            <li>2020.09-2021.03所属部门为恒生研究院应用发展部债券组，
+                                负责财务附注数据的抽取、开发、维护、应用，涉及方向为：统计推断、因果推断。</li>
+                            <li>2021.03-2022.04所属部门为恒生研究院数据工程部机器学习组，
+                                负责财务附注数据的抽取、开发、维护，图神经网络算法研究、设计与开发，
+                                涉及方向为：统计推断、因果推断、图神经网络、图嵌入学习。</li>
+                            <li>2022.04-至今所属部门为恒生电子技术平台研发管理部，
+                                负责图神经网络算法研究、设计与开发，
+                                涉及方向为：图神经网络、图嵌入学习。</li>
+                        </ul>
+                    </li>
+                    <!-- <li>
+                        <h3>
+                            <span>[经历2]XX－前端开发工程师（实习）</span>
+                            <time>20XX.10-20XX.7</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>深度参与公司主线产品「XXXX」的前端开发工作，完成帖子快捷回复、
+                                <mark>全站图片懒加载</mark>、活动banner、帖子管理（使用Yii框架）等功能。项目采用技术栈phpWind+NAMP。
+                                <a href="http://itsay.tech/162/" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。</li>
+                            <li>主要参与公司产品「XXXX」的前端开发工作，实现接入微博、微信、QQ等
+                                <mark>第三方账号登录</mark>等功能。项目采用技术栈WordPress+NAMP。</li>
+                            <li>活动页面的开发（七夕活动、抽奖活动以及承接外包页面）。</li>
+                            <li>论坛
+                                <mark>图片增量备份</mark>（CentOS+vsftpd+crontab）
+                                <a href="#" target="_blank">
+                                    <i class="fa fa-link" aria-hidden="true"></i>博客文章</a>。</li>
+                        </ul>
+                    </li> -->
+                </ul>
+            </section>
+
+            <!-- 项目经验 -->
+            <section class="project info-unit">
+                <h2>
+                    <i class="fa fa-terminal" aria-hidden="true"></i>个人项目</h2>
+                <hr/>
+                <ul>
+                    <li>
+                        <h3>
+                            <span>[项目1]基于nlp和知识图谱的智能问答系统</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>201X.X-201X.X</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：python+tensorflow+bert</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现与客服的智能问答，基本实现了对人工客服的替代
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [方法]基于 bert/albert深度学习算法获取用户查询语句和备选题库语句的特征表示(sentence embedding),
+                                基于文本相似度获取最近邻匹配,判断用户查询语句和备选库问题语句是否匹配,最终为用户查询提供反馈。
+                                有效解决智能客服领域由于标注数据少无法训练出语义匹配模型的问题
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]作为后期的主要开发人员进行智能客服系统的开发、支持、上线与维护。
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目2]财务附注数据开发与应用</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2020.9-2022.4</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：python+sklearn+numpy+pandas</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]将复杂不可用的财务附注数据转换为高可用的标准数据
+                                <br/>
+                                <!-- <i class="fa fa-users" aria-hidden="true"></i>
+                                [团队]与 1 位同学
+                                <br/> -->
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]负责财务附注数据开发的设计与维护
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目3]股权关系图嵌入在债券违约风险预测中的有效性研究</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2022.4-2022.9</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：python+pytorch+图嵌入学习+sklearn</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]对股权关系进行图嵌入在债券违约风险中的有效性进行探索
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [方法]从股权关系信息的理论有效性出发, 在三类债券违约风险预测中使用了四种图嵌入算法和七种机器学习预测模型, 
+                                针对股权关系信息的有效性, 图嵌入算法和机器学习模型的相对有效性进行分析。
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]负责项目的设计、开发、研究报告撰写。
+
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <h3>
+                            <span>[项目4]基于专利分类号和改进LightGCN算法的公司相似度度量研究</span>
+                            <span class="link">
+                                <a href="#" target="_blank">Demo</a>
+                            </span>
+                            <time>2022.9-2023.4</time>
+                        </h3>
+                        <ul class="info-content">
+                            <li>技术栈：python+pytorch+pytorch-geometric+DGL+图神经网络+图嵌入学习</li>
+                            <li>
+                                <i class="fa fa-paper-plane-o" aria-hidden="true"></i>
+                                [目标]实现从专利的角度对公司间的相似度进行度量
+                                <br/>
+                                <i class="fa fa-users" aria-hidden="true"></i>
+                                [方法]专利分类信息在衡量公司的核心竞争力方面具有很高的理论和实务意义，可作为度量公司相似度的重要手段，
+                                但如何将其转化为可学习的对象、使用何种方案与算法极具挑战。本项目专利分类号和改进LightGCN算法对此进行了研究，
+                                提出了一种高效、快速、数据要求低、粒度可调整、易于部署的公司相似度度量算法。
+                                本项目首先提出一种将专利分布信息转换为专利分布号网络的方案，然后基于生成的专利分布号网络使用图嵌入框架进行学习，
+                                并为此对LightGCN算法进行改进，
+                                基于改进LightGCN学习公司的嵌入向量，最终基于嵌入向量和cosine距离计算公司相似度值。
+                                <br/>
+                                <i class="fa fa-bars" aria-hidden="true"></i>
+                                [贡献]负责项目的设计、开发、上线、维护、研究报告撰写。
+                                <!-- <br/>
+                                <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+                                [效果]作品取得第二届共享杯国家级竞赛“特等奖”(1/1500) -->
+                            </li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </section>
+
+            <!-- 自我评价 -->
+            <section class="work info-unit">
+                <h2>
+                    <i class="fa fa-pencil" aria-hidden="true"></i>自我评价/期望</h2>
+                <hr/>
+                <p>具有广泛的跨学科背景，较强的自学能力和自我约束能力，能快速进行新的领域，能够以较强的探索欲和研究精神从事深度学习算法的开发和研究。
+                </p>
+            </section>
+        </section>
+    </article>
+
+
+
+    <footer class="footer">
+        <p>© 2017 黄志国.文档最后更新时间为
+            <time>2023年04月12日</time>.</p>
+    </footer>
+
+    <!-- 侧栏 -->
+    <aside>
+        <ul>
+            <li>
+                <a href="https://gitee.com/hzg0601/resume" target="_blank">源代码</a>
+            </li>
+        </ul>
+    </aside>
+
+    <script src="./assets/js/index.js"></script>
+</body>
+
+</html>
